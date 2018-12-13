@@ -42,7 +42,7 @@
   flex-wrap: wrap;
 }
 .mainNav .item {
-  height: 22vh;
+  height: 23.3vh;
   flex: 0 1 50%;
   box-sizing: border-box;
   padding: 1.4rem 0;
