@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="format-detection" content="telphone=no"/>
+  <meta name="format-detection" content="email=no"/>
+  <meta name="apple-mobile-app-capable" content="yes">
+  <meta name="apple-mobile-app-status-bar-style" content="black">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="320">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/iconfont.css"/>
+  <link rel="stylesheet" href="css/in.css"/>
+  <link rel="stylesheet" href="css/modal.css"/>
+  <title>转出</title>
+</head>
+<body>
+<p class="header">
+  <a href="index.html" class="fl"><i class="iconfont icon-left"></i></a>
+  <span class="fl">车间1</span>
+  <span>班长</span>
+  <span class="fr">张章章</span>
+</p>
+
+<div class="proList main">
+  <div class="proItem">
+    <p>
+      <span id="1" class="proType">种类种类种类种类种类</span>
+      <span class="fr">2018/03/12 9:30</span>
+    </p>
+    <p>
+      <span class="fl">数量：3000</span>
+      <span>张水水</span>
+      <a href="javascript:;" class="fr outOp">转出</a>
+    </p>
+  </div>
+  <div class="proItem">
+    <p>
+      <span id="2" class="proType">种类种类种类种类种类</span>
+      <span class="fr">2018/03/12 9:30</span>
+    </p>
+    <p>
+      <span class="fl">数量：3000</span>
+      <span>张水水</span>
+      <a href="javascript:;" class="fr outOp">转出</a>
+    </p>
+  </div>
+</div>
+<div class="outM modal">
+    <div class="joinHead modalHead">
+      <p>
+        当前件数 <input type="number" value="20" id="countAll" readonly/>
+        <input type="number" value="5" id="leave" class="fr" readonly/>
+        <span class="fr">剩余</span>
+      </p>
+    </div>
+    <div class="joinBody modalBody">
+      <p>
+        <i class="iconfont icon-tips"></i>
+        <input type="number" placeholder="待修复"/>
+      </p>
+      <p>
+        <i class="iconfont icon-tips"></i>
+        <input type="number" placeholder="转出数量"/>
+      </p>
+      <p>
+        <i class="iconfont icon-tips"></i>
+        <input type="number" placeholder="报损数量"/>
+      </p>
+      <p>
+        <i class="iconfont icon-tips"></i>
+        <input type="text" placeholder="原因"/>
+      </p>
+      <p style="text-align: center">
+        <select name="pro" id="pro">
+          <option value="0" checked>--请选择流转人--</option>
+          <option value="1">人员1</option>
+          <option value="2">人员2</option>
+        </select>
+      </p>
+    </div>
+    <div class="joinFoot modalFoot">
+      <p>
+        <a href="javascript:;" id="queBtn">确定</a>
+      </p>
+    </div>
+</div>
+<div class="mask"></div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  $('.proList').on('click','.outOp', function () {
+    var pro=$(this).parent().siblings().children('.proType')
+    var proId=pro.attr('id');
+    var proText=pro.text();
+    $('.mask').show();
+    $('.outM').show();
+  });
+  $('.mask').on('click', function () {
+    $('.outM').hide();
+    $('.mask').fadeOut(300);
+  });
+  $('#queBtn').on('click', function () {
+    $('.outM').hide();
+    $('.mask').fadeOut(300);
+  });
+</script>
+</body>
+</html>

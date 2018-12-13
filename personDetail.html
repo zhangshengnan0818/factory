@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="format-detection" content="telphone=no"/>
+  <meta name="format-detection" content="email=no"/>
+  <meta name="apple-mobile-app-capable" content="yes">
+  <meta name="apple-mobile-app-status-bar-style" content="black">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="320">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/iconfont.css"/>
+  <link rel="stylesheet" href="css/person.css"/>
+  <title>详情</title>
+</head>
+<body>
+<p class="header">
+  <a href="javascript:history.go(-1);" class="fl"><i class="iconfont icon-left"></i></a>
+  <span class="fl">车间1</span>
+  <span>班长</span>
+  <span class="fr">张章章</span>
+</p>
+
+<div class="perList main">
+  <div class="sum">
+   <div>
+     <label for="countAll">总数量</label><input id="countAll" name="countAll" type="number" placeholder="输入数量"/>
+   </div>
+    <div>
+      <label for="residue">未分配</label><input id="residue" name="residue" type="number" placeholder="输入数量"/>
+    </div>
+  </div>
+    <table>
+      <thead>
+      <tr>
+        <th></th>
+        <th>生产</th>
+        <th>报废</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>张菲菲</td>
+        <td><input name="1" type="number" placeholder="输入数量"/></td>
+        <td><input name="1" type="number" placeholder="输入数量"/></td>
+      </tr>
+      <tr>
+        <td>欧阳菲菲</td>
+        <td><input name="1" type="number" placeholder="输入数量"/></td>
+        <td><input name="1" type="number" placeholder="输入数量"/></td>
+      </tr>
+      </tbody>
+    </table>
+</div>
+<div class="footer">
+  <a href="javascript:;" class="addBtn">
+    保存
+  </a>
+  <a href="javascript:;" class="saveBtn">
+    提交
+  </a>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  $('.addBtn').click(function(){
+    var html=`<div class="proItem">
+    <label for="0" class="slideUp">请选择类别</label>
+    <a href="personDetail.html?" class="fr">详情<i class="iconfont icon-right"></i></a>
+    <input id="0" name="0" type="number" class="fr" placeholder="输入数量"/>
+  </div>`;
+    $('.proList').append(html);
+  });
+</script>
+</body>
+</html>

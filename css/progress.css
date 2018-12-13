@@ -1,0 +1,104 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 40px;
+  padding: 0 20px 0 0;
+  font-size: 16px;
+  background-color: #01aaeb;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.header a {
+  color: #fff;
+}
+.header a i {
+  padding: 0 15px;
+}
+.main {
+  padding: 40px 0 50px;
+}
+.footer {
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.header span {
+  width: 30%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.header .fl {
+  text-align: left;
+}
+.header .fr {
+  text-align: right;
+}
+.proItem {
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 5px;
+  line-height: 40px;
+  padding: 0 10px;
+}
+.proItem a {
+  display: inline-block;
+  color: #333;
+  margin-left: 5px;
+}
+.proItem label {
+  display: inline-block;
+  line-height: 30px;
+  width: 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.proItem input {
+  width: 25%;
+  text-align: center;
+  line-height: 30px;
+  border: 0;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.proItem i {
+  font-size: 14px;
+}
+.addBtn,
+.saveBtn {
+  display: inline-block;
+  border: 2px solid #fff;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #b8d434;
+  width: 40%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 3px 10px #c0c0c0;
+}
+.addBtn i,
+.saveBtn i {
+  font-size: 28px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.addBtn {
+  border-radius: 20px 0 0 20px;
+  background-color: #b8d434;
+  border-right: 0;
+}
+.saveBtn {
+  border-radius: 0 20px 20px 0;
+  background-color: #01aaeb;
+  margin-left: -3px;
+}
