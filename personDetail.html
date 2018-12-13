@@ -24,30 +24,33 @@
 <p class="header">
   <a href="javascript:history.go(-1);" class="fl"><i class="iconfont icon-left"></i></a>
   <span class="fl">车间1</span>
-  <span>班长</span>
+  <span>&nbsp;</span>
   <span class="fr">张章章</span>
 </p>
 
 <div class="perList main">
-  <div class="sum">
+  <!--<div class="sum">
    <div>
      <label for="countAll">总数量</label><input id="countAll" name="countAll" type="number" placeholder="输入数量"/>
    </div>
     <div>
       <label for="residue">未分配</label><input id="residue" name="residue" type="number" placeholder="输入数量"/>
     </div>
-  </div>
+  </div>-->
     <table>
       <thead>
       <tr>
         <th></th>
-        <th>生产</th>
-        <th>报废</th>
+        <th>生 产</th>
+        <th>报 废</th>
+        <th>报 修</th>
       </tr>
+
       </thead>
       <tbody>
       <tr>
         <td>张菲菲</td>
+        <td><input name="1" type="number" placeholder="输入数量"/></td>
         <td><input name="1" type="number" placeholder="输入数量"/></td>
         <td><input name="1" type="number" placeholder="输入数量"/></td>
       </tr>
@@ -55,8 +58,17 @@
         <td>欧阳菲菲</td>
         <td><input name="1" type="number" placeholder="输入数量"/></td>
         <td><input name="1" type="number" placeholder="输入数量"/></td>
+        <td><input name="1" type="number" placeholder="输入数量"/></td>
       </tr>
       </tbody>
+      <tfoot>
+      <tr>
+        <td style="font-weight: 600">总计</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+      </tr>
+      </tfoot>
     </table>
 </div>
 <div class="footer">

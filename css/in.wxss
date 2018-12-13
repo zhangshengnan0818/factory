@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 60;
   text-align: center;
   line-height: 40px;
   padding: 0 20px 0 0;
@@ -65,4 +66,9 @@
   font-size: 14px;
   box-shadow: 0 3px 10px #c0c0c0;
   border-radius: 20px;
+}
+.proType {
+  color: #ffb860 !important;
+  font-weight: 600;
+  font-size: 15px;
 }

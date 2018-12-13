@@ -18,21 +18,90 @@
   <link rel="stylesheet" href="css/common.css"/>
   <link rel="stylesheet" href="css/iconfont.css"/>
   <link rel="stylesheet" href="css/in.css"/>
+  <link rel="stylesheet" href="css/drop.css"/>
   <title>统计</title>
 </head>
 <body>
 <p class="header">
   <a href="index.html" class="fl"><i class="iconfont icon-left"></i></a>
   <span class="fl">车间1</span>
-  <span>班长</span>
+  <span>&nbsp;</span>
   <span class="fr">张章章</span>
 </p>
+<!--<div class="nav">
+  <ul>
+    <li style="text-align: right"><a href="" target="manegeFir" class="active">车间统计</a></li>
+    <li style="text-align: left"><a href="" target="manegeFir">工厂统计</a></li>
+  </ul>
+</div>
+<div class="iframeContent" style="height: 91vh;">
+  <iframe src="resumeReceive.html" frameborder="0" name="manegeSec" style="height: 100%"></iframe>
+</div>-->
+<div class="mask"></div>
+<div class="navc">
+  <ul class="droplists">
+    <li>
+      <a href="#">时间<i class="iconfont icon-down" style="margin-left: 5px;"></i></a>
+      <ul class="droplistmenu">
+        <li><a href="javascript:null;" class="yet">2018/01<i class="xz fr" style="display: block;"></i></a></li>
+        <li><a href="javascript:null;">2018/02<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">2018/03<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">2018/04<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">2018/05<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">2018/06<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">2018/07<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">2018/08<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">2018/09<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">2018/10<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">2018/11<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">2018/12<i class="xz fr"></i></a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">员工<i class="iconfont icon-down" style="margin-left: 5px;"></i></a>
+      <ul class="droplistmenu">
+        <li><a href="javascript:null;" class="yet">全部<i class="xz fr" style="display: block;"></i></a></li>
+        <li><a href="javascript:null;">员工1<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">员工2<i class="xz fr"></i></a></li>
+      </ul>
 
-<div class="proList main">
+    </li>
+    <li>
+      <a href="#">产品<i class="iconfont icon-down" style="margin-left: 5px;"></i></a>
+      <ul class="droplistmenu">
+        <li><a href="javascript:null;" class="yet">全部<i class="xz fr" style="display: block;"></i></a></li>
+        <li><a href="javascript:null;">产品1<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">产品2<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">产品3<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">产品4<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">产品5<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">产品6<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">产品7<i class="xz fr"></i></a></li>
+        <li><a href="javascript:null;">产品8<i class="xz fr"></i></a></li>
+      </ul>
+
+    </li>
+    <!--<li class="fr" style="flex: 20 1 auto;max-width: 40rem;text-align: right;">
+      <a href="#" id="shai">筛选</a>
+    </li>-->
+  </ul>
+</div>
+<div class="proList main" style="padding-top: 75px;">
   <div class="proItem">
     <p>
-      <span>种类种类种类种类种类</span>
-      <span class="fr">2018/03/12 9:30</span>
+      <span>汽车后桥</span>
+      <span class="fr">2018/03/16</span>
+    </p>
+    <p>
+      <span class="fl">数量：500</span>
+      <span>张水水</span>
+      <!--<a href="javascript:;" class="fr">接收</a>-->
+    </p>
+  </div>
+  <div class="proItem">
+    <p>
+      <span>电机壳</span>
+      <span class="fr">2018/03/12</span>
     </p>
     <p>
       <span class="fl">数量：3000</span>
@@ -42,8 +111,8 @@
   </div>
   <div class="proItem">
     <p>
-      <span>种类种类种类种类种类</span>
-      <span class="fr">2018/03/12 9:30</span>
+      <span>电机壳</span>
+      <span class="fr">2018/03/12</span>
     </p>
     <p>
       <span class="fl">数量：3000</span>
@@ -54,5 +123,6 @@
 </div>
 
 <script src="js/jquery-1.11.3.js"></script>
+<script src="js/zhaopin.js"></script>
 </body>
 </html>

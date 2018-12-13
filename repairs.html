@@ -41,27 +41,45 @@
 <p class="header">
   <a href="index.html" class="fl"><i class="iconfont icon-left"></i></a>
   <span class="fl">车间1</span>
-  <span>班长</span>
+  <span>&nbsp;</span>
   <span class="fr">张章章</span>
 </p>
 
 <div class="perList main">
   <div class="slide">
     <p>
-      <a href="javascript:;" id="slideUp">大类小类 </a><i class="iconfont icon-down"></i>
+      <a href="javascript:;" id="slideUp">汽车后桥 </a><i class="iconfont icon-down"></i>
     </p>
 
   </div>
-  <p id="countType">
+  <table>
+    <!--<thead>
+    <tr>
+      <th></th>
+      <th>报废</th>
+    </tr>
+    </thead>-->
+    <tbody>
+    <tr>
+      <td>张菲菲</td>
+      <td><input name="1" type="number" placeholder="输入数量"/></td>
+    </tr>
+    <tr>
+      <td>欧阳菲</td>
+      <td><input name="1" type="number" placeholder="输入数量"/></td>
+    </tr>
+    </tbody>
+  </table>
+  <!--<p id="countType">
     <span>报修数量：<input type="number" value="200"/></span>
-  </p>
+  </p>-->
 </div>
 <div class="footer">
-  <a href="javascript:;" class="addBtn">
-    保存
+  <a href="waitRep.html" class="addBtn">
+    待修列表
   </a>
   <a href="javascript:;" class="saveBtn">
-    提交
+    提交修复
   </a>
 </div>
 <script src="js/jquery-1.11.3.js"></script>
@@ -231,7 +249,7 @@
     }
   });
 </script>
-<script>
+<!--<script>
   $('.addBtn').click(function(){
     var html=`<div class="proItem">
     <label for="0" class="slideUp">请选择类别</label>
@@ -240,6 +258,6 @@
   </div>`;
     $('.proList').append(html);
   });
-</script>
+</script>-->
 </body>
 </html>

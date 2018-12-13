@@ -20,6 +20,14 @@
   <link rel="stylesheet" href="css/in.css"/>
   <link rel="stylesheet" href="css/modal.css"/>
   <title>转出</title>
+  <style>
+    .proItem input{
+      width: 20%;
+      border: 0;
+      border-bottom: 1px solid #999;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 <p class="header">
@@ -30,48 +38,51 @@
 </p>
 
 <div class="proList main">
-  <div class="proItem">
+  <!--<div class="proItem">
     <p>
-      <span id="1" class="proType">汽车后桥</span>
-      <span class="fr">2018/03/12 9:30</span>
+      <span id="1" class="proType fl">汽车后桥</span>
+      &lt;!&ndash;<span class="fr">2018/03/12 9:30</span>&ndash;&gt;
+      <span>数量：3000</span>
+      &lt;!&ndash;<span>张水水</span>&ndash;&gt;
+      <a href="javascript:;" class="fr outOp" style="    background-color: #b8d434;">修复</a>
     </p>
-    <p>
+    &lt;!&ndash;<p>
       <span class="fl">数量：3000</span>
       <span>张水水</span>
       <a href="javascript:;" class="fr outOp" style="    background-color: #b8d434;">待接收</a>
+    </p>&ndash;&gt;
+  </div>-->
+  <div class="proItem">
+    <p>
+      <span id="1" class="proType">汽车后桥</span>
+      <span class="fr" style="margin-right: 20px">张水水</span>
+    </p>
+    <p>
+      <span class="fl">数量：5</span>
+      <input type="text" placeholder="修复"/>
+      <a href="javascript:;" class="fr outOp">确认修复</a>
     </p>
   </div>
   <div class="proItem">
     <p>
       <span id="2" class="proType">电机壳</span>
-      <span class="fr">2018/03/12 9:30</span>
+      <span class="fr" style="margin-right: 20px">张水水</span>
     </p>
     <p>
-      <span class="fl">数量：3000</span>
-      <span>张水水</span>
-      <a href="javascript:;" class="fr outOp">转出</a>
-    </p>
-  </div>
-  <div class="proItem">
-    <p>
-      <span id="2" class="proType">电机壳</span>
-      <span class="fr">2018/03/12 9:30</span>
-    </p>
-    <p>
-      <span class="fl">数量：3000</span>
-      <span>张水水</span>
-      <a href="javascript:;" class="fr outOp">转出</a>
+      <span class="fl">数量：10</span>
+      <input type="text" placeholder="修复"/>
+      <a href="javascript:;" class="fr outOp">确认修复</a>
     </p>
   </div>
   <div class="proItem">
     <p>
-      <span id="2" class="proType">电机壳</span>
-      <span class="fr">2018/03/12 9:30</span>
+      <span id="3" class="proType">阀门</span>
+      <span class="fr" style="margin-right: 20px">张水水</span>
     </p>
     <p>
-      <span class="fl">数量：3000</span>
-      <span>张水水</span>
-      <a href="javascript:;" class="fr outOp">转出</a>
+      <span class="fl">数量：30</span>
+      <input type="text" placeholder="修复"/>
+      <a href="javascript:;" class="fr outOp">确认修复</a>
     </p>
   </div>
 </div>
